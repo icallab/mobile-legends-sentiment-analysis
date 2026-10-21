@@ -59,7 +59,7 @@ Pada tahap pemodelan, rating dikonversi menjadi label numerik:
 |---|---|---:|
 | 1–2 | Negatif | 0 |
 |  3  | Netral / Tidak digunakan | - |
-| 3–5 | Positif | 1 |
+| 4–5 | Positif | 1 |
 
 Label tersebut digunakan sebagai target dalam proses pelatihan model.
 
