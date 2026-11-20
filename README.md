@@ -189,7 +189,7 @@ pip install pandas numpy nltk gensim scikit-learn tensorflow matplotlib seaborn 
 Tempatkan dataset CSV di lokasi yang sesuai. Notebook saat ini menggunakan path Google Colab berikut:
 
 ```python
-/content/mobile_legends_reviews_100000.csv
+/content/mobile_legends_reviews.csv
 ```
 
 Notebook juga menghasilkan file perantara:
@@ -211,17 +211,25 @@ Struktur berikut direkomendasikan untuk mengorganisasi proyek di GitHub:
 ```text
 mobile-legends-sentiment-analysis/
 │
-├── README.md
-├── notebooks/
-│   └── mobile_legends_sentiment_analysis.ipynb
+├── dataset/
+│   ├── mobile_legends_reviews.csv
+│   └── sort_mobile_legends.csv
 │
 ├── models/
-│   └── (model tersimpan, jika ingin dibagikan)
+│   ├── sentiment_analysis_model_lstm.h5
+│   └── word2vec_mobile_legends .model
 │
+├── notebooks/
+│   └── sentiment_analysis_lstm_word2vec.ipynb
+|
 ├── results/
-│   └── (visualisasi dan hasil evaluasi)
+│   ├── confusion_matrix.png
+│   ├── distribusi_sentimen.png
+│   ├── evaluasi_model.png
+│   ├── training_model.png
+│   └── work_cloud.png
 │
-└── requirements.txt
+└── README.md
 ```
 
 Dataset tidak perlu dimasukkan ke repository apabila ukurannya besar atau distribusinya dibatasi. Notebook asli juga perlu dipindahkan ke folder `notebooks/` sesuai struktur yang digunakan.
