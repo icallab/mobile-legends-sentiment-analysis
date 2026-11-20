@@ -32,7 +32,6 @@ Kolom yang digunakan dalam implementasi meliputi:
 
 Dataset diproses untuk mempertahankan kolom yang relevan, kemudian diurutkan berdasarkan waktu ulasan.
 
-> Dataset tidak disertakan dalam repositori ini. Siapkan file CSV yang sesuai sebelum menjalankan notebook.
 
 ## 🛠️ Teknologi dan Library
 
@@ -206,8 +205,6 @@ Buka notebook melalui Google Colab atau Jupyter Notebook, lalu jalankan sel seca
 
 ## 📁 Struktur Repository
 
-Struktur berikut direkomendasikan untuk mengorganisasi proyek di GitHub:
-
 ```text
 mobile-legends-sentiment-analysis/
 │
@@ -232,14 +229,6 @@ mobile-legends-sentiment-analysis/
 └── README.md
 ```
 
-Dataset tidak perlu dimasukkan ke repository apabila ukurannya besar atau distribusinya dibatasi. Notebook asli juga perlu dipindahkan ke folder `notebooks/` sesuai struktur yang digunakan.
-
-## ⚠️ Catatan Implementasi
-
-- Path dataset di notebook menggunakan direktori Google Colab dan mungkin perlu disesuaikan.
-- Pada tahap awal notebook terdapat fungsi pelabelan yang tidak memberikan label untuk rating 3. Namun, tahap pemodelan menerapkan aturan rating 1–2 sebagai negatif dan rating 3–5 sebagai positif. Penjelasan hasil pada README ini mengikuti aturan yang digunakan pada tahap pemodelan.
-- Angka evaluasi dalam README ini berasal dari output notebook yang tersedia dan belum merupakan hasil pengujian ulang secara independen.
-- Hasil evaluasi dapat berubah jika dataset, preprocessing, pembagian data, atau konfigurasi pelatihan diubah.
 
 ## 📌 Kesimpulan
 
@@ -247,12 +236,3 @@ Proyek ini menunjukkan penerapan Word2Vec sebagai representasi kata dan LSTM seb
 
 Proyek ini juga menjadi sarana untuk menerapkan tahapan pengolahan data teks, pembentukan word embedding, pembangunan model deep learning, serta evaluasi performa klasifikasi.
 
-## 👤 Author
-
-**Nur Faizal Basri**
-
-GitHub: [@USERNAME](https://github.com/USERNAME)
-
----
-
-*Project: Sentiment Analysis of Mobile Legends User Reviews Using Word2Vec and LSTM*
